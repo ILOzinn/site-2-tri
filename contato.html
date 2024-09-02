@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg" />
+        <h1>Linguagens de Programação</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="info.html">Informações</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>FORMULÁRIO</h2>
+            <hr>
+
+            <form action="">
+
+                    <!--Inserir nome-->
+                    <label for="formulario_nome">Nome:</label>
+                    <input type="text" id="formulario_nome" placeholder="Digite seu nome aqui..." required>
+
+                    <!--Inserir sobrenome-->
+                    <label for="formulario_sobrenome">Sobrenome:</label>
+                    <input type="text" id="formulario_sobrenome" placeholder="Digite seu Sobrenome aqui..." required>
+                    <br>
+
+                    <!--Inserir nascimento-->
+                    <label for="formulario_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="formulario_nascimento" required>
+                    <br>
+
+                    <!--Inserir email-->
+                    <label for="formulario_email">Email:</label>
+                    <input type="email" id="formulario_email" placeholder="Digite seu email aqui..." required>
+
+                    <!--Inserir senha-->
+                    <label for="formulario_senha">Senha:</label>
+                    <input type="password" id="formulario_senha" placeholder="Digite sua senha..." required>
+                    <br>
+
+                    <!--Inserir Telefone-->
+                    <label for="formulario_celular">Celular:</label>
+                    <input type="tel" id="formulario_celular" placeholder="(xx) x xxxx-xxxx">
+
+                <fieldset>
+
+                    <!--Inserir periodo de estudo-->
+                    <legend>Período de Estudo:</legend>
+                    <select name="periodo_estudo" id="periodo_estudo">
+                        <option value="m">Manhã</option>
+                        <option value="t">Tarde</option>
+                        <option value="n">Noite</option>
+                    </select>
+
+                </fieldset>
+
+                <!--Inserir sua Linguagem-->
+
+                <fieldset>
+                    
+                    <legend>Qual linguagem de programação você usa?</legend>
+                    <label class="label_opcao" for="opcao1"><input type="radio" name="linguagem" id="opcao1" checked>Java</label>
+                    <label class="label_opcao" for="opcao2"><input type="radio" name="linguagem" id="opcao2">C#</label>
+                    <label class="label_opcao" for="opcao3"><input type="radio" name="linguagem" id="opcao3">JavaScript</label>
+                    <label class="label_opcao" for="opcao4"><input type="radio" name="linguagem" id="opcao4">Python</label>
+                    <label class="label_opcao" for="opcao5"><input type="radio" name="linguagem" id="opcao5">C++</label>
+                    <label class="label_opcao" for="opcao6"><input type="radio" name="linguagem" id="opcao6">Assembly</label>
+
+                </fieldset>
+
+                <input class="label_opcao" type="submit" id="formulario_enviar" value="Enviar">
+
+            </form>
+
+        </section>
+    </main>
+
+</body>
+</html>
